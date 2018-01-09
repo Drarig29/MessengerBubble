@@ -25,10 +25,10 @@ function setup() {
   bubble = new Bubble(width / 2, height / 2, 0.5, 0.15, 50);
 
   mousePos = createVector(0, 0);
-  rad = 34;
+  rad = 44;
 
   remRad = {
-    value: 30,
+    value: 40,
     drag: 0.5,
     strength: 0.15,
     target: 30
@@ -45,12 +45,12 @@ function mousePressed() {
   if (offset.mag() >= rad) return;
 
   last = millis();
-  rad = 32;
+  rad = 40;
   dragging = true;
 }
 
 function mouseReleased() {
-  rad = 34;
+  rad = 44;
   dragging = false;
 
   if (!remBubble) return;
